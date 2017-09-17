@@ -27,7 +27,9 @@ var stats = {
 	delegates: 0,
 	mined: 0,
 	shift: 0,
-	minedshift: 0
+	minedshift: 0,
+	rise: 0,
+	minedrise: 0
 };
 var forged = {};
 var balances = {};
@@ -310,7 +312,7 @@ exports.updatePrices = () => {
 	log.debug ('Data', 'Updating prices...');
 
 	let c = 'lisk';
-	if (config.coin == 'SHIFT') c = 'shift';
+	if (config.coin == 'RISE') c = 'rise';
 
 	request ('https://api.coinmarketcap.com/v1/ticker/' + c + '/', (error, response, body) => {
 		var data = JSON.parse(body);
