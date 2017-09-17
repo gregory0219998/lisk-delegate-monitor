@@ -1,7 +1,7 @@
 {
-	"coin": "LSK",
+	"coin": "RISE",
 	"port": 9090,
-	"node": "localhost:8000",
+	"node": "localhost:5555",
 	"telegram": {
 		"token": "",
 		"chatids": [1234, 124324],
